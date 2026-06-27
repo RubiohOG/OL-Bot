@@ -4,12 +4,16 @@ from discord.ext import commands
 import config
 from cogs.lanes import Lane
 from cogs.mid import Mid
+from cogs.siny import Siny
+from cogs.test import Test
 
 
 class OLBot(commands.Bot):
     async def setup_hook(self) -> None:
         await self.add_cog(Lane(self))
         await self.add_cog(Mid(self))
+        await self.add_cog(Siny(self))
+        await self.add_cog(Test(self))
 
 
 def main() -> None:

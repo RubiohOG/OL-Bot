@@ -36,7 +36,7 @@ This prevents members in unrelated voice channels (e.g. AFK, General) from movin
 
 ### Rate limiting
 
-Each user has a cooldown between command uses (default 30 seconds, configurable via `COMMAND_COOLDOWN_SECONDS`).
+Each user has a cooldown between command uses (default 10 seconds, configurable via `COMMAND_COOLDOWN_SECONDS`).
 
 ### Lane assignment logic
 
@@ -51,7 +51,7 @@ Each user has a cooldown between command uses (default 30 seconds, configurable 
 | `LANE_2_CHANNEL_ID` | Yes | Voice channel ID for Lane 2 |
 | `COMMAND_PREFIX` | No | Prefix for commands (default `!`) |
 | `ALLOWED_ROLE_IDS` | No | Comma-separated role IDs that may run commands without being in a lane VC |
-| `COMMAND_COOLDOWN_SECONDS` | No | Per-user cooldown in seconds (default `30`) |
+| `COMMAND_COOLDOWN_SECONDS` | No | Per-user cooldown in seconds (default `10`) |
 
 ## Secret Handling
 
